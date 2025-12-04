@@ -15,6 +15,12 @@ public class Ejercicio1 {
 
         System.out.println(frase);
 
+        String nombre1 = "CArLos";
+        String nombre2 = "carlos";
+
+        System.out.println(nombre1.equals(nombre2));
+
+
 
 
     }
