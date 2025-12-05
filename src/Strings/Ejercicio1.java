@@ -20,6 +20,10 @@ public class Ejercicio1 {
 
         System.out.println(nombre1.equals(nombre2));
 
+        //Tipos de variable
+        int nota = 2;
+
+
 
 
 

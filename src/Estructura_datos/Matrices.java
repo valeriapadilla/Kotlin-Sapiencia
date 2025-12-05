@@ -109,6 +109,9 @@ public class Matrices {
 
         System.out.println(Arrays.deepToString(matrizConsola));
 
+        //sumar columnas
+        
+
             
     
 
