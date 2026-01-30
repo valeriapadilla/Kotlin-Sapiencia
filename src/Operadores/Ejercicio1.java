@@ -1,9 +1,12 @@
 package Operadores;
 
+import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Ejercicio1 {
     public static void main(String[] args) {
+        
+        
         //escribir codigo aqui
 
         //En un restaurante se tienen 3 momentos: Entrada, Plato Fuerte y Bebida. 
