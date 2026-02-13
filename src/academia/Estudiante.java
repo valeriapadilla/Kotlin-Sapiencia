@@ -1,11 +1,26 @@
 package academia;
+import java.util.ArrayList;
 
 public class Estudiante {
+
+    //atributos
+
+    //nombre
+    public String nombre;
+    public int edad;
+    private ArrayList<Double> notas = new ArrayList<Double>();
 
     protected String estudiar(String materia){
         String accion = "Estudiando " + materia;
         return accion;
     }
+
+    void obtenerNota(double nota){
+        notas.add(nota);
+    }
+
+
+
 
     public boolean verificarMateria(double[] notas){
         int cantidadNotas = notas.length;
@@ -18,10 +33,10 @@ public class Estudiante {
 
         if(resultado >= 3.5){
             //si es verdadero entra aqui
-            System.out.println("Felicidades \n Gano la materia");
+            //System.out.println("Felicidades \n Gano la materia");
             return true;
         }else{
-            System.out.println("Repite materia, llorela");
+            //System.out.println("Repite materia, llorela");
             return false;
         }
     }
