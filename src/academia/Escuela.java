@@ -3,7 +3,7 @@ package academia;
 public class Escuela {
     public static void main(String[] args) {
         
-        Estudiante tecnologo = new Estudiante();
+        Estudiante tecnologo = new Estudiante("Juan Diego",23);
 
         String resultado = tecnologo.estudiar("Ingles");
 
@@ -20,10 +20,7 @@ public class Escuela {
         }
 
 
-        Estudiante primaria = new Estudiante();
-
-        primaria.nombre = "Maria";
-        primaria.edad = 10;
+        Estudiante primaria = new Estudiante("Maria",10);
 
         //nueva escuela
 
@@ -31,14 +28,14 @@ public class Escuela {
 
         quimico.nombre = "julian";
         quimico.asignatura = "Quimica";
-        quimico.id = "9395";
+        quimico.id = 9395;
         quimico.telefono = "1111";
 
         quimico.agregarEstudiante("Natalia",18);
         quimico.agregarEstudiante("Carlos",20);
         quimico.agregarEstudiante("Felipe", 20);
 
-       quimico.evaluarEstudiante(0, 3.5);
+        quimico.evaluarEstudiante(0, 3.5);
 
     }
 

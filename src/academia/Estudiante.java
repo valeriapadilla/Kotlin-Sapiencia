@@ -4,12 +4,17 @@ import java.util.ArrayList;
 public class Estudiante {
 
     //atributos
-
-    //nombre
     public String nombre;
     public int edad;
     private ArrayList<Double> notas = new ArrayList<Double>();
 
+    //constructor
+    public Estudiante(String nombre, int edad){
+        this.nombre = nombre;
+        this.edad = edad;
+    }
+
+    //metodos o funciones
     protected String estudiar(String materia){
         String accion = "Estudiando " + materia;
         return accion;
@@ -19,24 +24,14 @@ public class Estudiante {
         notas.add(nota);
     }
 
-
-
-
     public boolean verificarMateria(double[] notas){
         int cantidadNotas = notas.length;
 
-        //vamos a calcular el promedio para saber si gana o pierde
         double resultado = calcularNotaFinal(notas,cantidadNotas);
 
-        //si es > a 3.5 gana si es menor pierde
-        //if(si resultado es mayor o igual a 3.5){
-
         if(resultado >= 3.5){
-            //si es verdadero entra aqui
-            //System.out.println("Felicidades \n Gano la materia");
             return true;
         }else{
-            //System.out.println("Repite materia, llorela");
             return false;
         }
     }
@@ -51,5 +46,7 @@ public class Estudiante {
 
         return suma / cantidad;
     }
+
+
 
 }
