@@ -24,13 +24,8 @@ public class Escuela {
 
         //nueva escuela
 
-        Docente quimico  = new Docente();
-
-        quimico.nombre = "julian";
-        quimico.asignatura = "Quimica";
-        quimico.id = 9395;
-        quimico.telefono = "1111";
-
+        Docente quimico  = new Docente("Julian","Quimica","1111",22);
+       
         quimico.agregarEstudiante("Natalia",18);
         quimico.agregarEstudiante("Carlos",20);
         quimico.agregarEstudiante("Felipe", 20);

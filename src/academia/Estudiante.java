@@ -1,17 +1,16 @@
 package academia;
 import java.util.ArrayList;
 
-public class Estudiante {
+public class Estudiante extends Persona{
 
     //atributos
-    public String nombre;
-    public int edad;
+    // public String nombre;
+    // public int edad;
     private ArrayList<Double> notas = new ArrayList<Double>();
 
     //constructor
     public Estudiante(String nombre, int edad){
-        this.nombre = nombre;
-        this.edad = edad;
+        super(nombre,edad);
     }
 
     //metodos o funciones
